@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 31 to 34</title>
+</head>
+
+<body>
+
+    
+
+
+
+    <script>
+        document.write("<h1>QUESTION NO :01</h1>");
+        var Time = new Date();
+        document.write(Time, "</br>");
+
+
+
+        document.write("<h1>QUESTION NO :02</h1>");
+        var month = Time.toString();
+        var copy = month.slice(4, 8);
+        document.write(copy);
+
+
+
+
+
+        document.write("<h1>QUESTION NO :03</h1>");
+        var copy1 = month.slice(0, 3);
+        alert(`Today is ${copy1}`);
+        document.write(`Today is ${copy1}`);
+
+
+
+
+
+        document.write("<h1>QUESTION NO :04</h1>");
+        if (copy1 == "Sun" || copy1 == "Sat") {
+            document.write("It's Fun Day");
+
+        };
+
+
+        document.write("<h1>QUESTION NO :05</h1>");
+        var Days = month.slice(8, 10);
+        if (Days <= "15") {
+            document.write("First Fifteen Days Of The Month");
+
+        }
+        else {
+            document.write("Last Days Of The Month")
+        };
+
+
+
+
+        document.write("<h1>QUESTION NO :06</h1>");
+        var currentDate = new Date();
+
+        // Create a Date object for the Unix epoch (January 1, 1970, 00:00:00 UTC)
+        var epochDate = new Date("Jan 1 , 2023 ");
+        // Calculate the difference in milliseconds between the current date and the epoch
+        var millisecondsSinceEpoch = currentDate - epochDate;
+        console.log("This is the milliseconds from Jan 1 ,2023 ",millisecondsSinceEpoch);
+        document.write("This is the milliseconds from Jan 1 ,2023: ",millisecondsSinceEpoch);
+        
+
+        // Convert milliseconds to minutes
+        var minutesSinceEpoch = Math.floor(millisecondsSinceEpoch / (1000 * 60));
+
+        // Assign the result to a variable that hasn't been declared beforehand
+        // In this case, we use 'minutesSinceEpoch' directly.
+        console.log("This is the minutes from Jan 1 ,2023",minutesSinceEpoch);
+        document.write("</br>This is the minutes from Jan 1 ,2023: ",minutesSinceEpoch);
+
+
+
+
+
+
+        document.write("<h1>QUESTION NO :07</h1>");
+
+
+        const now = new Date();
+
+        // Get the current hour (in 24-hour format)
+        const currentHour = now.getHours();
+
+        // Determine whether it is before or after noon
+        if (currentHour < 12) {
+            alert("It's AM");
+            document.write("Right now It's AM")
+        } else {
+            alert("It's PM");
+            document.write(" Right now It's PM")
+        };
+
+
+
+
+        document.write("<h1>QUESTION NO :08</h1>");
+        var watch = new Date("Thu , Dec , 31 , 2020");
+        document.write(watch);
+
+
+
+
+
+        document.write("<h1>QUESTION NO :09</h1>");
+        // var watch4 = watch3.getTime();
+        var watch5 = new Date("Mar 12 , 2024");
+        var watch3 = new Date();
+        var strg = watch3.toString();
+
+        // var watch6 = watch5.getTime();
+        var diff1 = watch3 - watch5;
+        // document.write(diff1,"</br>");
+        var sub = Math.floor(diff1 / (1000 * 60 * 60 * 24));
+        console.log(diff1);
+        document.write("No of Days Passed out from 1st Day of Ramadan of 2024= ",sub ,"Days"); 
+        console.log("This is days passed out from Ramadan 2024",sub);
+        alert(`The days passed from 1st day of Ramadan of 2024: ${sub}`);
+    
+
+
+
+        //         const firstRamadanDate = new Date('June 18, 2015');
+
+        // // Get the current date
+        // const currentDate = new Date();
+
+        // // Calculate the difference in time between the two dates
+        // const timeDifference = currentDate - firstRamadanDate;
+
+        // // Convert time difference from milliseconds to days
+        // const daysPassed = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        // // Alert the number of days past
+        // alert(`Number of days since 1st Ramadan: ${daysPassed}`);
+
+
+
+        
+        document.write("<h1>QUESTION NO :10</h1>");
+        document.write("<h2>K-ELECTRIC BILL</h2>")
+        document.write("Customer Name: Maryam Khalil");
+        document.write("</br>Current Month: August");
+        var BillAmoun = 16500;
+        document.write("</br>Net Amount Payable (Within Due Date): ", BillAmoun);
+        var LateAmou = 500;
+        document.write("</br>Late Amount Surcharge ", LateAmou);
+        var noUnit = 400;
+        var perUnit = 41.25; 
+        document.write("</br>Number of Unit: ", noUnit);
+        document.write("</br>Charge per Unit: ",perUnit);
+        var AfterDue = BillAmoun + LateAmou;
+        document.write("</br>Gross Amount (After Due Date): ", AfterDue)
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

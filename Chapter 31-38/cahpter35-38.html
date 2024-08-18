@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 35 to 38</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>QUESTION NO: 01</h1>")
+        function Waqt() {
+            var waqt1 = new Date();
+            document.write(waqt1);
+
+        }
+        Waqt();
+
+
+        document.write("<h1>QUESTION NO: 02</h1>")
+        function Name() {
+            var FirstName = prompt("Enter your First Name");
+
+            var LastName = prompt("Enter Your Last Name");
+
+            alert("Welcome to the page " + FirstName + " " + LastName);
+            document.write("Welcome to the page " + FirstName + " " + LastName);
+
+        }
+        Name();
+
+
+
+        document.write("<h1>QUESTION NO: 03</h1>")
+        function no() {
+            var num1 = prompt("Enter First Number");
+            var num3 = Number(num1);
+            var num2 = prompt("Enter Second Number");
+            var num4 = Number(num2);
+            return num3 + num4;
+
+        }
+        var output = no();
+        document.write("</br>This is output of the addition ", output);
+
+
+
+
+
+
+
+        document.write("<h1>QUESTION NO: 04</h1>")
+        function add(a, b) {
+            return a + b
+        }
+
+        function subtract(a, b) {
+            return a - b
+        }
+
+        function multiply(a, b) {
+            return a * b
+        }
+
+        function divide(a, b) {
+            if (b === 0) {
+                alert("Error: Divison by Zero")
+            }
+            return a / b
+        }
+        function calculator() {
+            var num1 = parseInt(prompt("Enter your first number: "))
+            var num2 = parseInt(prompt("Enter your second number: "))
+            var opertors = prompt("Enter your operator: +,-,*,/")
+
+            var result;
+            switch (opertors) {
+                case '+':
+                    result = add(num1, num2)
+                    break;
+                case '-':
+                    result = subtract(num1, num2)
+                    break;
+                case '*':
+                    result = multiply(num1, num2)
+                    break;
+                case '/':
+                    result = divide(num1, num2)
+                    break;
+                default:
+                    alert("Invalid Operator")
+            }
+            alert(`The result is: ${result}`);
+            document.write(`</br>The result is: ${result}`);
+        }
+        calculator();
+
+
+
+
+        document.write("<h1>QUESTION NO: 05</h1>")
+        function square(x) {
+            return x * x;
+        };
+
+        const result = square(4);
+        console.log(result);  // Output will be 16
+        document.write("</br>", result);
+
+
+        document.write("<h1>QUESTION NO: 06</h1>")
+        function factorial(n) {
+            if (n < 0) {
+                throw new Error("Factorial is not defined for negative numbers.");
+            }
+            let result = 1;
+            for (let i = 2; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+
+
+
+
+            document.write("<h1>QUESTION NO: 07</h1>")
+            function displayCounting() {
+                // Prompt user for start and end numbers
+                const start = parseInt(prompt("Enter the start number:"));
+                const end = parseInt(prompt("Enter the end number:"));
+
+                // Check if inputs are valid numbers
+                if (isNaN(start) || isNaN(end) || start > end) {
+                    console.log('Please enter valid start and end numbers, where start is less than or equal to end.');
+                    document.write('</br>Please enter valid start and end numbers, where start is less than or equal to end.');
+                    return;
+                }
+
+                // Create a string with the counting sequence
+                let countingString = '';
+                for (let i = start; i <= end; i++) {
+                    countingString += i + ' ';
+                }
+
+                // Display the counting sequence in the console
+                console.log(countingString.trim());
+                document.write("</br>", countingString.trim());
+            }
+
+            // Call the function to display counting
+            displayCounting();
+        };
+
+
+
+
+
+        document.write("<h1>QUESTION NO: 08</h1>")
+        function calculateHypotenuse() {
+            // Inner function to compute the square of a number
+            function calculateSquare(x) {
+                return x * x;
+            }
+
+            // Prompt user for base and perpendicular values
+            const base = parseFloat(prompt("Enter the base of the triangle:"));
+            const perpendicular = parseFloat(prompt("Enter the perpendicular of the triangle:"));
+
+            // Check if inputs are valid numbers
+            if (isNaN(base) || isNaN(perpendicular)) {
+                console.log('Please enter valid numbers for base and perpendicular.');
+                alert('Please enter valid numbers for base and perpendicular.');
+                return;
+            }
+
+            // Compute squares of base and perpendicular
+            const baseSquare = calculateSquare(base);
+            const perpendicularSquare = calculateSquare(perpendicular);
+
+            // Compute the hypotenuse
+            const hypotenuse = Math.sqrt(baseSquare + perpendicularSquare);
+
+            // Display the result
+            console.log(`The hypotenuse of the triangle is: ${hypotenuse}`);
+            document.write(`</br>The hypotenuse of the triangle is: ${hypotenuse}`);
+        }
+
+        // Call the function to calculate the hypotenuse
+        calculateHypotenuse();
+
+
+
+        document.write("<h1>QUESTION NO: 09</h1>")
+        function calculateArea(width, height) {
+            return width * height;
+        }
+
+        // 1. Using direct values
+        const areaWithValues = calculateArea(5, 10);
+        console.log(`Area with direct values: ${areaWithValues}`);  // Output will be 50
+
+        // 2. Using variables
+        const width = 7;
+        const height = 12;
+        const areaWithVariables = calculateArea(width, height);
+        console.log(`Area with variables: ${areaWithVariables}`);
+        document.write(`</br>Area with variables: ${areaWithVariables}`);
+
+
+
+        document.write("<h1>QUESTION NO: 10</h1>")
+        function calcCircumference(radius) {
+            // Define the constant for pi
+            const pi = Math.PI;
+
+            // Calculate the circumference
+            const circumference = 2 * pi * radius;
+
+            // Output the result
+            console.log(`The circumference is ${circumference}`);
+            document.write(`</br>The circumference is ${circumference}`);
+        }
+
+        // Function to calculate the area of a circle
+        function calcArea(radius) {
+            // Define the constant for pi
+            const pi = Math.PI;
+
+            // Calculate the area
+            const area = pi * radius * radius;
+
+            // Output the result
+            console.log(`The area is ${area}`);
+            document.write(`</br>The area is ${area}`);
+        }
+
+        // Example usage:
+        const radius = 5;
+
+        calcCircumference(radius);  // Output will be "The circumference is 31.41592653589793" (for radius 5)
+        calcArea(radius);
+
+
+
+    </script>
+
+</body>
+
+</html>

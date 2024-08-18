@@ -1,0 +1,28 @@
+
+.box{
+    width: 50vw;
+    height: 20vh;
+    color: rgb(237, 204, 200);
+    background-color: rgb(150, 33, 33);
+    border-radius: 20px;
+    box-shadow: 3px 4px 3px 3px ;
+  
+    margin-left: 25vw;
+    margin-top: 30vh;
+   
+    
+}
+.box a{
+    color: rgb(230, 194, 190);
+    font-size: 25px;
+    text-decoration:underline dashed;
+   
+   text-align: center;
+   margin-left: 22vh;
+   margin-top: 12vh;
+   width: 20vw;
+}
+.box h1{
+    margin-left: 6vw;
+    margin-top: -30px;
+}
